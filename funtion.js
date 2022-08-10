@@ -9,7 +9,6 @@ function evenOdd(nums){
         }
     }
 }
-
 var nums = [10, 11, 12, 13, 14, 15];
 evenOdd(nums);
 var friend_age = [16, 17, 18, 19, 20];

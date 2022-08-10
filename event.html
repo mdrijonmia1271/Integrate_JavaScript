@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event management company</title>
+</head>
+<body>
+    <h1>Exploring Event</h1>
+    <button onclick="alert('You have called Pata Harun')">Click me</button>
+    <button id="second">Click blue</button>
+    <button id="third">Click pick</button>
+    <button id="forth">Click tomato</button>
+
+    <script>
+         function secondBclick(){
+            document.body.style.backgroundColor = 'blue';
+        }
+        function thirdbclick(){
+            document.body.style.backgroundColor='pink';
+        }
+       
+       const secondButton = document.getElementById('second');
+       secondButton.addEventListener('click', secondBclick);
+       const thirdButton = document.getElementById('third');
+       thirdButton.addEventListener('click', thirdbclick);
+       document.getElementById('forth').addEventListener('click', function(){
+           this.style.backgroundColor = 'tomato';
+       })
+    </script>
+    
+</body>
+</html>
